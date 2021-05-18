@@ -34,7 +34,7 @@ public class MinimumNumberOfSwapsToMakeTheBinaryStringAlternating {
     if (Math.abs(numOnes - numZeros) > 1) {
       return -1;
     }
-    // if the difference is odd, then impossible to make 10101 pattern, make 01010 instead
+    // if the difference is odd, it is impossible to make 10101 pattern, make 01010 instead
     // vice versa
     if (countOnes % 2 == 1) {
       return countZeros / 2;
