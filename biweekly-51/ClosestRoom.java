@@ -6,9 +6,9 @@ import java.util.TreeSet;
 
 public class ClosestRoom {
 
-  // sort queries by the decreasing of its minSize order.
-  // sort rooms by the decreasing of its size order.
-  // roomIdsSoFar treeSet includes all room ids which have size >=minSize of current query so far.
+  // sort queries in decreasing minSize order.
+  // sort rooms in decreasing size order.
+  // roomIdsSoFar treeSet includes all room ids which have size >= minSize of current query so far.
   // For each query:
   //  - Add all room ids which have size >=minSize of current query.
   //  - Query floor and ceiling of q[0] (preferredId) from roomIdsSoFar
